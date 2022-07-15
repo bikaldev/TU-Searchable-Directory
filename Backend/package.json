@@ -1,0 +1,11 @@
+{
+  "name": "tu-searchable-api",
+  "version": "1.0.0",
+  "description": "An api for retrieving data from the database for the TU Searchable Directory application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bikal Devkota",
+  "license": "MIT"
+}
