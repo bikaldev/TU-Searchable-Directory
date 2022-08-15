@@ -8,7 +8,7 @@ import { InfoCardComponent } from './tree/info-card/info-card.component';
 import { TreeComponent } from './tree/tree.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'filter', pathMatch: 'full'},
+  {path: '', redirectTo: 'search', pathMatch: 'full'},
   {path: 'edit', canActivate: [AuthGuard],component: TreeComponent},
   {path: 'edit/:label', canActivate: [AuthGuard],component: InfoCardComponent},
   {path: 'auth', component: AuthFormComponent},

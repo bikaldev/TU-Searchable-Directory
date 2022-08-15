@@ -17,7 +17,7 @@ export class SearchComponent implements OnInit {
   empty: boolean;
   error: boolean;
   errorMessage: string;
-  isFetching: string;
+  isFetching: boolean;
 
   searchBy: string;
 
@@ -29,8 +29,10 @@ export class SearchComponent implements OnInit {
 
   onSearch(form: NgForm) {
     let keyword = form.value['search'];
+    this.isFetching = true;
     this.dataService.search(keyword, this.searchBy).subscribe(
       (response) => {
+        this.isFetching = false;
         if(response.body.length == 0) {
           this.empty = true;
           this.error = true;
@@ -43,6 +45,7 @@ export class SearchComponent implements OnInit {
         this.searchResult = response.body;
       },
       (error) => {
+        this.isFetching = false;
         console.log(error);
         this.error = true;
         this.errorMessage = "Server Error! Please Try Again!";
