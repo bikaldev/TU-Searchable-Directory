@@ -1,4 +1,18 @@
 
-.menu{
-    color: aqua;
+.dropdown-toggle{
+    font-size: 5 rem;
+}
+
+.dropdown-menu{
+    list-style-type: none;
+    display: block;
+    background: var(--smoke);
+    padding: 6px 16px;
+    position: absolute;
+    width: max-content;
+    z-index: 9999;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    pointer-events: none;
 }

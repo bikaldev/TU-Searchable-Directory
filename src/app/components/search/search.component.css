@@ -1,4 +1,6 @@
-.searchbar{
+/* change was made here */
+
+.search{
     height: 10vh;
     display: flex;
     width:160vh;
@@ -12,8 +14,8 @@
 }
 
 .searchbar-input{
-    height: 9vh;
-    width: 100vh;
+    height: 5vh;
+    width: 150vh;
     padding: 1.5%;
     border-radius: 5px;
     border: solid 1px black;
@@ -28,8 +30,8 @@
 .search-button{
     background-image: url('../../../images/search-button.png');
     /* background-size: 9vh; */
-    height: 9vh;
-    width: 15vh;
+    height: 10vh;
+    width: 10vh;
     max-width: 21vh;
     max-height: 10vh;
     background-color: white;
