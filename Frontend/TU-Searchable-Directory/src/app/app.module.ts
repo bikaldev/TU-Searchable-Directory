@@ -20,6 +20,7 @@ import { ButtonComponent } from './button/button.component';
 import { DropdownDirective } from './directives/app-dropdown.directive';
 import { AuthGuard } from './services/auth-guard.service';
 import { DisplayCardComponent } from './display-card/display-card.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { DisplayCardComponent } from './display-card/display-card.component';
     DropdownComponent,
     ButtonComponent,
     DropdownDirective,
-    DisplayCardComponent
+    DisplayCardComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
